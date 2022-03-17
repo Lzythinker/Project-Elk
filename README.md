@@ -102,8 +102,8 @@ Metricbeat collects metrics from the operating system and from services running 
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the playbook file to /etc/ansible.
-- Update both config files to include the ELK VM Private IP address(10.2.0.4) 
+- Copy the playbook file to /etc/ansible/roles.
+- Update both Hosts/config files to include the ELK VM Private IP address(10.2.0.4), webservers/elkservers
 - Run the playbook, and navigate to Kibana to check that the installation worked as expected.
 
 _TODO: Answer the following questions to fill in the blanks:_
