@@ -1,0 +1,47 @@
+Question 3: Containers
+When is it appropriate to use containers in cloud deployments, and what are the security benefits of doing so?
+
+
+Provide a Concrete Example Scenario
+
+In Project 1, when did you use containers?
+I used the container to access to Web-1-2. and to install docker.
+
+
+
+What did you use containers for?
+I use the container to run ansible-playbook, make configurations.
+
+
+Explain the Solution Requirements
+
+Why was this an appropriate use for containers?
+Becuase instead of doing on every computer you have on a network, you can just run it on one computer to save time
+
+What security benefits did you expect from using containers?
+The security benefits of using the containers are
+Eaasy updates: with docker containers, its easy to keep your application up to date by pulling the latest images from whichever registry you use. It's also easy to patch any vulnerabilities quickly
+Smaller attach surface: with containers, you only need to secure the hosts, the Docker daemon( which is much small than a regular vm). This makes the containers have a smaller attack surfaces.
+modularity: If you are using the containers to host a microservices application, you can link security problems to specfic microservices. This will make it easier to find and resolve vulnerabilities.
+
+
+Explain the Solution Details
+
+In Project 1, how did you configure VMs to be able to run containers?
+I added the VMS private IP to the Hosts file in /etc/ansible
+
+How did you select and install the correct container?
+i install the container through ansible playbook. 
+How did you verify that it was running correctly?
+I ran the command sudo docker ps to check to see if its running correctly
+
+
+Identify Advantages/Disadvantages of the Solution
+
+How would you have achieved the same thing without containers?
+I would run each of the command line by line on all of the VMs
+What are the advantages to doing it without containers?
+Doing it without containers means you have access to more tools, less complicated networking.
+
+What are the disadvantages?
+they can be less secure and they can require complicated networking. sometimes it might not be reliable
