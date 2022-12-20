@@ -86,27 +86,6 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ![Docker ps](https://github.com/Lzythinker/Project-Elk/blob/main/IMG/docker%20ps.PNG)
 
-### Target Machines & Beats
-This ELK server is configured to monitor the following machines: Web-1(10.0.0.5), Web-2(10.0.0.10)
-- _TODO: List the IP addresses of the machines you are monitoring_
-
-We have installed the following Beats on these machines: Filebeat, Metricbeat
-- _TODO: Specify which Beats you successfully installed_
-
-These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
-Filebeat monitors log files or locations you specify and collects log events.
-Metricbeat collects metrics from the operating system and from services running on the server.
-
-
-
-### Using the Playbook
-In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
-
-SSH into the control node and follow the steps below:
-- Copy the playbook file to /etc/ansible/roles.
-- Update both Hosts/config files to include the ELK VM Private IP address(10.2.0.4), webservers/elkservers
-- Run the playbook, and navigate to Kibana to check that the installation worked as expected.
 
 _TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?
